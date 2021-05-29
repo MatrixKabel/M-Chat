@@ -1,0 +1,17 @@
+Config:
+  setJoinPermission:  #set a permission when a player join
+    set: true 
+    permission: chat.Player
+  chat:
+    sendPrefix: false  #like that: [Owner] Player >> message
+    SaveBadMessage: false
+    groups:  #prefix goups
+      groupnumbers: 0  #when you add a group you must add 1 to this number
+      group0:  #when you will create a new group use this format group0, group1, group2...
+        format: "[Player] {name} >> {message}"  #the format like [Player] Günni >> Hello gues! ||  And please dont write ...[Player]{message} ... please write ... [Player] {message} ...!
+        permission: "chat.Player"  #the permission you nedd to have this format
+
+  badwords:
+    numbers: 1  #when you add a badword you must add 1 to this number
+    '0': fuck  #you must add 1 to the last number and than you must right the badword behind it
+    '1': idiot #'2': word ....
